@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href='assets/calculator.png' type='image/x-icon'>  
+    <link rel="stylesheet" href='css/styles.css'>
+    <link rel="stylesheet" href='css/day-night.css'>
+  <title>Cool calculator</title>
+</head>
+<body>
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <div class="input_blocks">
+      <div class="input_block-one">
+        <div class="input_block-one__buttons-line">
+          <button data-all-clear class="wide-button ac-button">AC</button>
+          <button data-delete class="wide-button ac-button">DEL</button>
+        </div>
+  
+        <div class="input_block-one__buttons-line">
+          <button data-number class="number-button">1</button>
+          <button data-number class="number-button">2</button>
+          <button data-number class="number-button">3</button>
+          <button data-operation class="operation">÷</button>
+        </div>
+  
+        <div class="input_block-one__buttons-line">
+          <button data-number class="number-button">4</button>
+          <button data-number class="number-button">5</button>
+          <button data-number class="number-button">6</button>
+          <button data-operation class="operation" >×</button>        
+        </div>
+  
+        <div class="input_block-one__buttons-line">
+          <button data-number class="number-button">7</button>
+          <button data-number class="number-button">8</button>
+          <button data-number class="number-button">9</button>
+          <button data-operation class="operation" >+</button>        
+        </div>
+  
+        <div class="input_block-one__buttons-line">
+          <button data-number class="number-button">.</button>
+          <button data-number class="number-button">0</button>
+          <button data-number class="number-button">00</button>
+          <button data-operation class="operation" >-</button>        
+        </div>
+  
+        <div class="input_block-one__buttons-line">
+         
+          <button data-equals class="wide-button ex-wide-button operation " >=</button>    
+          <button class="operation">-/+</button>    
+        </div>     
+      </div><!--input_block-one-->
+
+
+
+
+
+
+      <div class="input_block-two">
+        <div class="vertical-slider">
+          <button onclick="toggle ()" data-toggleButton id="vertical-slider__button">
+            <p id="arrow-show">&gt;</p><p id="arrow-hide">&lt;</p></button>
+        </div>
+        
+
+        <div data-window id="navLink" class="navLinks">
+
+          <div class="input_block-two__empty-block">
+            Have a nice day!
+          </div>
+    
+          <div class="input_block-two__buttons-line">
+            <button>INV</button>
+            <button>DEG</button>
+            <button>%</button>
+            
+          </div>
+    
+          <div class="input_block-two__buttons-line">
+            <button>SIN</button>
+            <button>COS</button>
+            <button>TAN</button>
+                   
+          </div>
+    
+          <div class="input_block-two__buttons-line">
+            <button>Ln</button>
+            <button>log</button>
+            <button>&Sqrt;</button>
+                    
+          </div>
+    
+          <div class="input_block-two__buttons-line">
+            <button>&pi;</button>
+            <button>e</button>
+            <button>^</button>
+                   
+          </div>
+    
+          <div class="input_block-two__buttons-line">
+            <button>&#40</button>
+            <button>&#41</button>
+            <button>!</button>
+                    
+          </div>   
+
+        </div><!--input_block-two__input-block-->
+       
+
+          
+      </div><!--input_block-two-->
+
+        <div class="input_block-two__buttons-line">
+
+        </div><!--input_block-two__buttons-line-->
+      </div><!--input_block-two-->
+    </div><!--input_blocks-->     
+  </div><!--calculator grid-->
+ <div class="checkbox-container">
+   <input type="checkbox" class="checkbox" id="checkbox"><label for="checkbox" class="label">
+     <i class="fas fa-moon"></i>
+     <i class="fas fa-sun"></i>
+     <div class="ball"></div>
+   </label>
+ </div>
+
+  
+
+<script src="js/calculator.js" defer></script>
+<script src="js/toggle.js" defer></script>
+<script src="js/day-night.js" defer></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

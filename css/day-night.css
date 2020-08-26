@@ -1,0 +1,86 @@
+.checkbox-container{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.label{
+  background-color: #111;
+  display: flex;
+  border-radius: 50px;
+  height: 26px;
+  width: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0px;
+
+  position: relative;
+
+}
+.fa-moon{
+  color: #f1c40f ;
+  margin-left: 2px;
+}
+.fa-sun{
+  color: #f39c12;
+  margin-right: 2px;
+}
+.ball{
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  top: 3px;
+  left: 2px;
+  position: absolute;
+  border-radius: 50%;
+  transition: transform .3s linear;
+}
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+.checkbox:checked + .label .ball {
+  transform: translateX(26px);
+  
+}
+
+body.dark {
+  background: rgb(84,44,117);
+  background: linear-gradient(90deg, rgb(72, 45, 95) 0%,
+   rgba(21,4,55,0.8776552857471114) 100%);
+  /*background-color: #292C35; 
+  background: linear-gradient(93deg, rgb(17, 47, 48) 0%, 
+  rgb(87, 70, 34) 100%);  */
+}
+body.dark .output{    
+  background-color: rgba(114, 112, 112, 0.479);
+}
+body.dark #vertical-slider__button{
+  
+  background-color: rgb(25, 25, 94);
+  color: rgb(88, 89, 122);
+  
+}
+body.dark .navLinks{
+  background-color: rgb(100, 77, 77);
+}
+body.dark .number-button{
+  background: rgb(161,161,161);
+background: radial-gradient(circle, rgba(161,161,161,1) 0%, 
+rgba(27,27,27,1) 100%);
+color: rgb(49, 50, 122);
+}
+body.dark .ac-button{
+
+}
+body.dark .operation{
+  background: rgb(181,54,86);
+background: radial-gradient(circle, rgba(181,54,86,1) 0%,
+ rgba(56,26,36,1) 100%);
+}
+body.dark .ball{
+  
+  background-color: rgb(151, 151, 151);
+  transition: .3s;
+}
